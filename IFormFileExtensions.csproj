@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Description>Provide a simple way, to manipulate IFormFiles in ASP.NET Core environment, such as Reading the File content, convert to byte array, check if the current file is actually an image and Store a file in the server</Description>
+    <Copyright>Free to use, Free to modify!</Copyright>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <PackageTags>ASP.NET Core</PackageTags>
+    <Authors>Ahmed Abu El-Nour</Authors>
+    <Version>1.3.0</Version>
+    <Company>Personal</Company>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DocumentationFile>bin\Debug\netstandard2.0\IFormFileExtensions.xml</DocumentationFile>
+    <PublishDocumentationFile>true</PublishDocumentationFile>
+    <PublishDependencyDocumentationFiles>true</PublishDependencyDocumentationFiles>
+    <AssemblyVersion>1.3.0.0</AssemblyVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.0.0" />
+  </ItemGroup>
+</Project>
