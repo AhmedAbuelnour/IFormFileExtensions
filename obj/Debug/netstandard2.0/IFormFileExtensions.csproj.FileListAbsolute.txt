@@ -1,0 +1,10 @@
+D:\Repo\IFormFileExtensions\bin\Debug\netstandard2.0\IFormFileExtensions.xml
+D:\Repo\IFormFileExtensions\bin\Debug\netstandard2.0\IFormFileExtensions.deps.json
+D:\Repo\IFormFileExtensions\bin\Debug\netstandard2.0\IFormFileExtensions.dll
+D:\Repo\IFormFileExtensions\bin\Debug\netstandard2.0\IFormFileExtensions.pdb
+D:\Repo\IFormFileExtensions\obj\Debug\netstandard2.0\IFormFileExtensions.csprojResolveAssemblyReference.cache
+D:\Repo\IFormFileExtensions\obj\Debug\netstandard2.0\IFormFileExtensions.csproj.CoreCompileInputs.cache
+D:\Repo\IFormFileExtensions\obj\Debug\netstandard2.0\IFormFileExtensions.AssemblyInfoInputs.cache
+D:\Repo\IFormFileExtensions\obj\Debug\netstandard2.0\IFormFileExtensions.AssemblyInfo.cs
+D:\Repo\IFormFileExtensions\obj\Debug\netstandard2.0\IFormFileExtensions.dll
+D:\Repo\IFormFileExtensions\obj\Debug\netstandard2.0\IFormFileExtensions.pdb

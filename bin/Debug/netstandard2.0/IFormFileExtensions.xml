@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>IFormFileExtensions</name>
+    </assembly>
+    <members>
+        <member name="T:IFormFileExtensions.BasicExtensions">
+            <summary>
+            Represents the basic IFormFile operations.
+            </summary>
+        </member>
+        <member name="M:IFormFileExtensions.BasicExtensions.ReadAllTextAsync(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Read All the content of a file, works with ".txt" file.
+            </summary>
+            <param name="Value">Represents the Current Value of IFormFile</param>
+            <returns>A String contains the content of the current file.</returns>
+        </member>
+        <member name="M:IFormFileExtensions.BasicExtensions.ReadAllTextsAsync(Microsoft.AspNetCore.Http.IFormFileCollection)">
+            <summary>
+            Read All the content of a collection of files, works with ".txt" files.
+            </summary>
+            <param name="fileCollection">Represents the Current Value of IFormFileCollection</param>
+            <returns>List of Strings each contains the content of the its current file.</returns>
+        </member>
+        <member name="M:IFormFileExtensions.BasicExtensions.ConvertFileToBytesAsync(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Converts the file into Byte Arrays
+            </summary>
+            <param name="file">Represents the current IFormFile</param>
+            <returns>Byte Array represents the current file</returns>
+        </member>
+        <member name="M:IFormFileExtensions.BasicExtensions.ConvertFilesToBytesAsync(Microsoft.AspNetCore.Http.IFormFileCollection)">
+            <summary>
+            Converts the files into list of Byte Arrays
+            </summary>
+            <param name="files">Represents the current IFormFileCollection</param>
+            <returns>List of Byte Array represents its current file</returns>
+        </member>
+        <member name="M:IFormFileExtensions.BasicExtensions.StoreFileToServerFolderAsync(Microsoft.AspNetCore.Http.IFormFile,System.String)">
+            <summary>
+            Store the current file in the server, for later use
+            </summary>
+            <param name="file">the file that you want to store in the server</param>
+            <param name="directoryPath">the directory path, that you want to store in it.</param>
+            <returns>Task of storing the file in the server</returns>
+            <example>
+            await StoreFileToServerFolderAsync(file,"images/files");
+            </example>
+        </member>
+        <member name="M:IFormFileExtensions.BasicExtensions.StoreFilesToServerFolderAsync(Microsoft.AspNetCore.Http.IFormFileCollection,System.String)">
+            <summary>
+            Store the current files in the server, for later use
+            </summary>
+            <param name="files">the files that you want to store in the server</param>
+            <param name="directoryPath">the directory path, that you want to store in it.</param>
+            <returns>Task of storing the files in the server</returns>
+            <example>
+            await StoreFilesToServerFolderAsync(files,"images/files");
+            </example>
+        </member>
+        <member name="T:IFormFileExtensions.HashingExtensions">
+            <summary>
+            Provide 3 Hashing methods for different using
+            </summary>
+        </member>
+        <member name="M:IFormFileExtensions.HashingExtensions.GetStrongHash128(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Compute the hash of a file (128 Letter) 
+            </summary>
+            <param name="Value">The Current file to get its hash</param>
+            <returns>
+            A strong hash (128 Letter) 
+            </returns>
+        </member>
+        <member name="M:IFormFileExtensions.HashingExtensions.GetIntermediateHash64(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Compute the hash of a file (64 Letter) 
+            </summary>
+            <param name="Value">The Current file to get its hash</param>
+            <returns>
+            A strong hash (64 Letter) 
+            </returns>
+        </member>
+        <member name="M:IFormFileExtensions.HashingExtensions.GetWeakHash40(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Compute the hash of a file (40 Letter) 
+            </summary>
+            <param name="Value">The Current file to get its hash</param>
+            <returns>
+            A strong hash (40 Letter) 
+            </returns>
+        </member>
+        <member name="T:IFormFileExtensions.ImageExtensions">
+            <summary>
+            Provide The ability to work with images easily
+            </summary>
+        </member>
+        <member name="M:IFormFileExtensions.ImageExtensions.GetImageFormat(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+             Gets the current image format 
+            </summary>
+            <param name="image">The current Image</param>
+            <returns>The Type of the current image</returns>
+        </member>
+        <member name="T:IFormFileExtensions.ImageExtensions.ImageFormat">
+            <summary>
+            Represents the Image types
+            </summary>
+        </member>
+        <member name="T:IFormFileExtensions.SecurityExtensions">
+            <summary>
+            Provide Encrypt/Decrypt Methods to help you to encrtypt and decrypt the file.
+            </summary>
+        </member>
+        <member name="M:IFormFileExtensions.SecurityExtensions.EncryptAsync(Microsoft.AspNetCore.Http.IFormFile,System.String,System.String)">
+            <summary>
+            Encrypt a file
+            </summary>
+            <param name="InputFile">The Current file to encrypt</param>
+            <param name="Key">The Encryption Key</param>
+            <param name="Salt">Makes the encryption more secure</param>
+        </member>
+        <member name="M:IFormFileExtensions.SecurityExtensions.DecryptAsync(Microsoft.AspNetCore.Http.IFormFile,System.String,System.String)">
+            <summary>
+            Decrypt a file
+            </summary>
+            <param name="InputFile">The Current file to decrypt</param>
+            <param name="Key">The Encryption Key</param>
+            <param name="Salt">Needed for decryption</param>
+        </member>
+    </members>
+</doc>
