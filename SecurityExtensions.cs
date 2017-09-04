@@ -17,7 +17,7 @@ namespace IFormFileExtensions
         /// <param name="InputFile">The Current file to encrypt</param>
         /// <param name="Key">The Encryption Key</param>
         /// <param name="Salt">Makes the encryption more secure</param>
-        public static async Task<string> Encrypt(this IFormFile InputFile, string Key, string Salt)
+        public static async Task<string> EncryptAsync(this IFormFile InputFile, string Key, string Salt)
         {
             // Locate a memory to write the bytes in. 
             using (MemoryStream MS = new MemoryStream())
@@ -47,7 +47,7 @@ namespace IFormFileExtensions
         /// <param name="InputFile">The Current file to decrypt</param>
         /// <param name="Key">The Encryption Key</param>
         /// <param name="Salt">Needed for decryption</param>
-        public static async Task<string> Decrypt(this IFormFile InputFile, string Key, string Salt)
+        public static async Task<string> DecryptAsync(this IFormFile InputFile, string Key, string Salt)
         {
             // Locate a memory to write the bytes in. 
             using (MemoryStream MS = new MemoryStream())
